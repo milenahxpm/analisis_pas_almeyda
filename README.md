@@ -1,61 +1,34 @@
-# analisis_pas_almeyda
-# Análisis de la Presión Arterial Sistólica (PAS)
+# Análisis del efecto del tratamiento A sobre la presión arterial
 
-## Descripción
+**Autores:** Milena Mariluz Almeyda
 
-Este proyecto tiene como finalidad evaluar si el tratamiento A reduce la presión arterial sistólica (PAS) en comparación con el tratamiento B, considerando otras variables clínicas y demográficas mediante un modelo de regresión lineal.
+**Fecha:** Julio 2026
 
-## Objetivo
-
-Determinar el efecto del tratamiento sobre la presión arterial sistólica ajustando por:
-
-- Edad
-- Sexo
-- Índice de Masa Corporal (IMC)
-- Colesterol
-- Hábito de fumar
-- Diabetes
-
-## Conjunto de datos
-
-El conjunto de datos corresponde a 150 pacientes con hipertensión arterial.
-
-Variables incluidas:
-
-- Edad
-- Sexo
-- IMC
-- PAS
-- Colesterol
-- Fumador
-- Diabetes
-- Tratamiento (A/B)
+**Objetivo:** Evaluar si el tratamiento A reduce significativamente la PAS en comparación con el tratamiento B, ajustando por edad, sexo, IMC, colesterol, tabaquismo y diabetes.
 
 ## Estructura del proyecto
 
-```text
-data/
-├── raw/
-└── processed/
+- `data/raw/`: Datos originales 
+- `data/processed/`: Datos limpios generados por el script 01_limpieza.R
+- `scripts/`: Código R para limpieza, análisis y gráficos
+- `outputs/`: Tablas y figuras generadas
 
-scripts/
-├── 01_limpieza.R
-├── 02_exploracion.R
-└── 03_modelo_regresion.R
+## Cómo ejecutar
 
-outputs/
-├── tablas/
-└── figuras/
+1. Clonar este repositorio.
+2. Abrir R y establecer el directorio de trabajo en la raíz del proyecto.
+3. Ejecutar los scripts en orden numérico.
+4. Los resultados se guardarán en `outputs/`.
 
-docs/
-```
+## Paquetes requeridos
 
-## Software utilizado
+- tidyverse
+- ggplot2
+- dplyr
+- car
 
-- R
-- RStudio
-- GitHub
+(Se pueden listar con `sessionInfo()`).
 
-## Autor
+## Licencia
 
-Milena Mariluz Almeyda
+Este proyecto está bajo licencia MIT.
